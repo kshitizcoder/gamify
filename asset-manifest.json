@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/gamify/static/css/main.9cffad61.css",
-    "main.js": "/gamify/static/js/main.5fc35c8a.js",
+    "main.js": "/gamify/static/js/main.4d0452f7.js",
     "static/media/game.jpg": "/gamify/static/media/game.7d7420d8844249eed278.jpg",
     "static/media/thumnail.png": "/gamify/static/media/thumnail.f34bf738962c1ea844e4.png",
     "static/media/slick.svg": "/gamify/static/media/slick.2630a3e3eab21c607e21.svg",
@@ -10,10 +10,10 @@
     "static/media/slick.woff": "/gamify/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/gamify/index.html",
     "main.9cffad61.css.map": "/gamify/static/css/main.9cffad61.css.map",
-    "main.5fc35c8a.js.map": "/gamify/static/js/main.5fc35c8a.js.map"
+    "main.4d0452f7.js.map": "/gamify/static/js/main.4d0452f7.js.map"
   },
   "entrypoints": [
     "static/css/main.9cffad61.css",
-    "static/js/main.5fc35c8a.js"
+    "static/js/main.4d0452f7.js"
   ]
 }
