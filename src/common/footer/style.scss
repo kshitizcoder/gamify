@@ -1,0 +1,61 @@
+@import "../css/colors.scss";
+.footer {
+    margin-top: 5rem;
+    padding-bottom: 2rem;
+    .wrapper {
+        .footlinks {
+            display: flex;
+            justify-content: center;
+            ul {
+                li {
+                    list-style: none;
+                    color: $pure;
+                    display: inline-block;
+                    margin-left: 2.5rem;
+                    transition: all 0.3s ease;
+                    &:hover {
+                        color: $primary;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+    p {
+        color: $pure;
+        text-align: center;
+    }
+    .social_links {
+        margin-top: 2rem;
+        display: flex;
+        justify-content: center;
+        .footersocialicons {
+            color: $pure;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 80px;
+            height: 80px;
+            margin-left: 4rem;
+            border-radius: 20rem;
+            text-align: center;
+            padding: 1.7rem 0.5rem;
+            transition: all 0.3s ease;
+            &:hover {
+                background-color: $primary;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 568px) {
+    .footlinks {
+        ul {
+            text-align: center;
+            li {
+                margin-top: 1rem;
+                font-size: 1rem;
+            }
+        }
+    }
+}

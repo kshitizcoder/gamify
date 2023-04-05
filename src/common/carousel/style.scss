@@ -1,0 +1,13 @@
+.slider {
+    margin-top: 5rem;
+    .game_container {
+        .game_img {
+            img {
+                transition: all .3s ease;
+                &:hover {
+                    transform: scale(1.07);
+                }
+            }
+        }
+    }
+}

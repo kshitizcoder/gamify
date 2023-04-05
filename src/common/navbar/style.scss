@@ -1,0 +1,16 @@
+@import "../css//common.scss";
+.navbar {
+    background: rgba(0, 0, 0, 0.35) !important;
+    backdrop-filter: blur(3.5px) !important;
+    .navbar-nav {
+        .nav-link {
+            color: $pure;
+            margin-right: 1.5rem;
+            font-size: 1.3rem;
+        }
+    }
+    .search {
+        color: $pure !important;
+        font-size: 1.3rem;
+    }
+}

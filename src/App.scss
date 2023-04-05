@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import "./common/css//common.scss";
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    font-family: "Montserrat", sans-serif !important;
+    background: $background;
+}
+
+.shooter {
+    margin-top: 100vh;
+}
