@@ -4,11 +4,11 @@ import "./style.scss";
 import logo from "../../assets/logo.png";
 import { NavLink, useNavigate } from "react-router-dom";
 const Navbar = () => {
-  const navigate=useNavigate();
+  const navigate = useNavigate();
   return (
     <nav className="navbar navbar-expand-lg ">
       <div className="container">
-        <NavLink className="navbar-brand text-white" to={"/"}>
+        <NavLink className="navbar-brand text-white" to={"/gamify"}>
           <img src={logo} alt="" className="img-fluid" />
         </NavLink>
         <button
@@ -25,7 +25,11 @@ const Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <NavLink className="nav-link active" aria-current="page" to="/explore/all">
+              <NavLink
+                className="nav-link active"
+                aria-current="page"
+                to="/explore/all"
+              >
                 All
               </NavLink>
             </li>
@@ -40,7 +44,7 @@ const Navbar = () => {
               </NavLink>
             </li>
           </ul>
-          <FaSearch onClick={()=>navigate("/search")} className="search" />
+          <FaSearch onClick={() => navigate("/search")} className="search" />
         </div>
       </div>
     </nav>

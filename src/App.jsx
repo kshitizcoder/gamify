@@ -17,6 +17,7 @@ import Navbar from "./common/navbar/Navbar";
 import Footer from "./common/footer/Footer";
 import Details from "./pages/Details";
 import Explore from "./pages/Explore";
+import FourZeroFour from "./pages/FourZeroFour";
 export default function App() {
   const dispatch = useDispatch();
 
@@ -36,7 +37,7 @@ export default function App() {
         BASE_URL + "games?category=sports"
       );
       let { data: gamesData } = await axios.get(BASE_URL + "games");
-      // setData({ shooter: shooterData, racing: racingData,fantacy:fantasyData,sports:sportsData });
+
       dispatch(
         fetchSuccess({
           shooter: shooterData,
@@ -55,27 +56,20 @@ export default function App() {
   useEffect(() => {
     dispatch(handleFetch());
   }, []);
-  // console.log(data);
-  // const gameData = useSelector((state) => state.reducer);
-  // console.log(gameData);
-  // if (isLoading) {
-  //   <h1>Loading . . .</h1>;
-  // }
+
   return (
     <>
       <Navbar />
-      {/* {isLoading ? (
-        <h1 className="text-white">Loading</h1>
-      ) : ( */}
+
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route exact path="/gamify" element={<Home />} />
         <Route path="/searchresult/:query" element={<SearchResult />} />
         <Route path="/search" element={<Search />} />
         <Route path="/explore/:type" element={<Explore />} />
 
         <Route path="/details/:id" element={<Details />} />
+        <Route path="*" element={<FourZeroFour />} />
       </Routes>
-      {/* )} */}
 
       <Footer />
     </>
